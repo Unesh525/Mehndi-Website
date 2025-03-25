@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="icon" type="image/png" href="./images/dedededededed.PNG" />
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/9526a052de.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- WhatsApp Button -->
+<a href="https://wa.me/919303861558" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark  px-4">
+      <a href="index.html" class="logo-brand">
+        <img src="images/deeed.PNG" class="lgs" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+        aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+<div class="container fr mt-5">
+  <div class="row justify-content-center">
+      <div class="col-md-6">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+              <div class="card-header  gh  text-black text-center">
+                  <h3>Contact Us</h3>
+              </div>
+              <div class="card-body">
+                  <form id="contactForm">
+                      <!-- Name Field -->
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                      </div>
+                      <!-- Phone Number Field -->
+                      <div class="mb-3">
+                          <label for="phone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                      </div>
+                      <!-- Message Field -->
+                      <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                      </div>
+                      <!-- Send Message Button -->
+                      <div class="d-grid">
+                          <button type="button" class="btn btn-success" onclick="sendData()">Send Message</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="card-footer text-muted text-center">
+                  We will get back to you soon!
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+          
+    <footer class="text-center text-lg-start" style="background: #0b0b0ba8; color: #fff;">
+
+
+
+      <!-- Section: Links  -->
+      <section class="footer">
+        <footer class="text-center text-lg-start" style="background: #0b0b0ba8; color: #fff;">
+          <section class="">
+            <div class="container-fluid text-center text-md-start py-2">
+              <div class="row mt-3" style="justify-content: space-around">
+                <div class=" col-md-7 mx-auto mb-4 text-left d-flex  flex-column justify-content-around">
+                  <h6 class="text-uppercase fw-bold mb-4"><img src="./images/logo.webp" alt=""
+                      style="width: 40px; border-radius: 50%; margin-right: 8px;">Shweta
+                    Mehndi Artist
+                  </h6>
+                  <div>
+                   
+                    
+                    <a href="https://www.instagram.com/mehndi_artist_mandla?igsh=MXhtYWw2a3Y3ZDJ6cQ==" class="me-4 text-reset">
+                      <i class="fab icons-footer fa-instagram"></i>
+                    </a>
+                    <a href="tel:+919303861558" class="call-btn" title="Call Now">
+                      <i class="fa-solid fa-phone"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+                <div class="col-md-3 mx-auto mb-md-0 mb-4 text-left">
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p>
+                    <i class="fas fa-home me-3" aria-hidden="true"></i>Lalipur, Mandla, Binjhiya, Madhya Pradesh 481661 
+                  </p>
+                 
+                  <p>
+                    <i class="fas fa-phone me-3" aria-hidden="true"></i> +91 9303861558
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="text-center py-2" style="background-color: rgba(0, 0, 0, 0.1)">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://umeshkumarmeghwal.netlify.app/">Designed and developed by Teach Umesh Ji</a>
+          </div>
+        </footer>
+      </section>
+      <!-- Copyright -->
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+  // Contact Form से डेटा भेजने का फंक्शन
+function sendData() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+
+  var url = "https://script.google.com/macros/s/AKfycbxSZvUPDNORyXGUQ2AdAP0M6tYkBTAmRES3Sn-z8i32tcamOnjkmfNa03ms3TAEnUah/exec"; // अपना URL लगाओ
+
+  var data = {
+    name: name,
+    phone: phone,
+    message: message,
+  };
+
+  // POST डेटा भेजना
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then(() => {
+      alert("Message sent successfully! ✅");
+    })
+    .catch((error) => {
+      alert("Error: " + error.message);
+    });
+}
+
+</script>
+
+</html>
